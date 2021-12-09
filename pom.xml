@@ -14,6 +14,7 @@
         <module>abstract-factory-pattern</module>
         <module>template-pattern</module>
         <module>builder-patterm</module>
+        <module>proxy-pattern</module>
     </modules>
 
     <properties>
