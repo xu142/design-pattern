@@ -11,9 +11,8 @@ import normal.IGamePlayer;
 
 public class GamePlayProxy implements IGamePlayer {
     private IGamePlayer gamePlayer = null;
+
     //通过构造函数传递要对谁进行代练
-
-
     public GamePlayProxy(String name) {
         try {
             gamePlayer = new GamePlayer(this,name);

@@ -1,12 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Observer-pattern/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Observer-pattern/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/abstract-factory-pattern/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/abstract-factory-pattern/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/adapter-pattern/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/adapter-pattern/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/aop/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/aop/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/builder-pattern/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/builder-pattern/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/command-pattern/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/command-pattern/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/composite-pattern/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/composite-pattern/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/decorate-pattern/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/decorate-pattern/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/facade-pattern/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/facade-pattern/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/factory-pattern/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/factory-pattern/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/interpreter-pattern/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/interpreter-pattern/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/iterator-pattern/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/iterator-pattern/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/memento-pattern/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/memento-pattern/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/prototype-pattern/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/prototype-pattern/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/proxy-pattern/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/proxy-pattern/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/responsibility-chain-pattern/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/responsibility-chain-pattern/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/singleton-pattern/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/singleton-pattern/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/state-pattern/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/state-pattern/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/strategy-pattern/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/strategy-pattern/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/template-pattern/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/template-pattern/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tertium-quid-pattern/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tertium-quid-pattern/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/visitor-pattern/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/visitor-pattern/src/main/resources" charset="UTF-8" />
   </component>
 </project>

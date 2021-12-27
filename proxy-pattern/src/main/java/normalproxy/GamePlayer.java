@@ -13,6 +13,7 @@ public class GamePlayer implements IGamePlayer {
     private String name = "";
     //构造函数限制谁能创建对象，并同时传递姓名
     public GamePlayer(IGamePlayer _gamePlayer,String _name) throws Exception{
+        // 限制条件 检查谁能创建真实的角色
         if(_gamePlayer == null ){
             throw new Exception("不能创建真实角色！");
         }else{

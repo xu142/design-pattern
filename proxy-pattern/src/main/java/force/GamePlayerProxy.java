@@ -18,17 +18,17 @@ public class GamePlayerProxy implements IGamePlayer {
 
     @Override
     public void login(String user, String password) {
-        this.getProxy().login(user, password);
+        this.gamePlayer.login(user, password);
     }
 
     @Override
     public void killBoss() {
-        this.getProxy().killBoss();
+        this.gamePlayer.killBoss();
     }
 
     @Override
     public void upgrade() {
-        this.getProxy().upgrade();
+        this.gamePlayer.upgrade();
     }
 
     @Override

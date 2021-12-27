@@ -1,67 +1,62 @@
 package com.design.template;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.Objects;
 
 /**
- * @Author: Xiao An
- * @Description: Http
- * @Date Created in 2021--11--23 23:25
- * @Modified By:
+ * @Author: An
+ * @Date: 2021/11/10 16:21
  */
-
 public class HttpClient {
 
-    public static String doGet(String httpUrl) {
+    public static void doGet(String httpUrl) {
         HttpURLConnection connection = null;
-        InputStream inputStream = null;
-        BufferedReader bufferedReader = null;
-        // 返回结果字符串
-        String result = null;
+        InputStream is = null;
+        BufferedReader br = null;
+        String result = null;   // 返回结果字符串
+
         try {
             // 创建远程url 连接对象
             URL url = new URL(httpUrl);
-            // 通过远程url连接对象打开一连接，强转成httpURLConnection类
+            // 通过远程url连接对象打开一个连接，强转成httpUrlConnection类
             connection = (HttpURLConnection) url.openConnection();
             // 设置连接方式：get
             connection.setRequestMethod("GET");
-            // 设置连接主机服务器的超时时间 ：15000毫秒
+            // 设置连接主机服务器的超时时间 15000毫秒
             connection.setConnectTimeout(15000);
-            // 设置读取远程返回的数据时间 ： 60000毫秒
+            // 设置读取远程返回的数据时间 60000 毫秒
             connection.setReadTimeout(60000);
             // 发送请求
             connection.connect();
-            // 通过connection连接， 获取输入流
-            if (connection.getResponseCode() == 200) {
-                inputStream = connection.getInputStream();
-                // 封装输入流 inputStream 并指定字符串
-                bufferedReader = new BufferedReader(new InputStreamReader(inputStream, "UTF-8"));
+            // 通过connection连接获取输入流
+            if(connection.getResponseCode() == 200) {
+                is = connection.getInputStream();
+                // 封装输入流is 并指定字符流
+                br = new BufferedReader(new InputStreamReader(is, "UTF-8"));
                 // 存放数据
-                StringBuffer stringBuffer = new StringBuffer();
+                StringBuilder sbf = new StringBuilder();
                 String temp = null;
-                while ((temp = bufferedReader.readLine()) != null) {
-                    stringBuffer.append(temp);
-                    stringBuffer.append("\r\n");
+                while((temp = br.readLine()) != null) {
+                    sbf.append(temp);
+                    sbf.append("\r\n");
                 }
-                result = stringBuffer.toString();
+                result = sbf.toString();
             }
-        } catch (IOException e) {
+        } catch (Exception e) {
             e.printStackTrace();
-        }  finally {
+        } finally {
             // 关闭资源
-            if (Objects.nonNull(bufferedReader)) {
+            if (null != br) {
                 try {
-                    inputStream.close();
+                    br.close();
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
-
-            assert connection != null;
-            connection.disconnect();
         }
-        return result;
     }
 }
